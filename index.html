@@ -1,0 +1,65 @@
+<!-- OBS: No vsc comando shift + 1 cria estrutura basica do html -->
+<!-- OBS2: Comando ctrl + ponto e virgula para comentarios -->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login-Helper</title>
+        <!-- Importando css -->
+        <link rel="stylesheet" href="./css/style.css">
+        <!-- Importando JS -->
+        <script src="./js/index.js" defer></script>
+        <!-- Importando font do google fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <!-- Importando icones font awesome-->
+        <script src="https://kit.fontawesome.com/33af753310.js" crossorigin="anonymous" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Login-Helper</h1>
+        </header>
+
+        <main>
+            <form>
+                <!-- Detail Image - Atalhos para desenvolvimento - tag*3-->
+                <section class="inputs-container">
+                    <input type="email" placeholder="example@mail.com">
+
+                    <div class="password-container">
+                        <input type="passwotd" id="field-password" class="field-password" placeholder="********">
+                        <i class="fas fa-eye" id="eye" onclick="showPassword()"></i>
+                        <i class="fas fa-eye-slash" id="eye-slash" onclick="showPassword()"></i>
+                    </div>
+                </section>
+
+                <section class="password-infos">
+                    <div>
+                        <input type="checkbox">
+                        <span>Lembrar senha?</span>
+                    </div>
+                    <a href="#">Esqueceu sua senha?</a>
+                </section>
+
+                <!-- Inserindo o botão -->
+
+                <button id="btn-login">Login</button>
+
+                <section class="links-container">
+                    <span>Ou entre com:</span>
+                    <aside>
+                        <a href=""><i class="fab fa-google google"></i></a>
+                        <a href=""><i class="fab fa-linkedin linkedin"></i></a>
+                        <a href=""><i class="fab fa-facebook-f facebook"></i></a>
+                    </aside>
+                </section>
+
+                <footer>
+                    <hr>
+                    <span>Ainda não tem uma conta? <a href="">Cadastre-se!</a></span>
+                </footer>
+            </form>
+        </main>
+    </body>
+</html>
